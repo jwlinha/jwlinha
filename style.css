@@ -1,0 +1,128 @@
+body {
+    font-family:'Times New Roman', Times, serif
+    line-height:1.6;
+    margin:0;
+    padding:0;
+    background-color:rgb(250, 238, 247);
+}
+
+.subtitulo {
+    font-size: 1.3em;
+}
+
+img {
+    margin: 10px;
+    border: 5px solid rgb(75, 70, 70);
+}
+
+header {
+    background: linear-gradient(to right,#b38393, #e7bcc7);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid rgb(75, 70, 70);
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.sobremim {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left: 230px; 
+}
+
+.sobre-mim-container {
+    display: flex;           
+    align-items: flex-start; 
+    justify-content: flex-end; 
+    gap: 200px; 
+    font-size:1.5em;              
+}
+
+.sobre-mim-container p {
+    max-width: 700px;       
+    margin-top: 50;        
+    margin-left: 50px;  
+    text-align: center;
+}
+
+.foto-container {
+    position: relative;       
+}
+
+.foto-perfil {
+    width: 300px;             
+    border-radius: 50%;       
+    margin-top: 0;            
+    margin-right: 140px;
+}
+
+.linguagens {
+    font-size: 1.3em;
+}
+
+.linguagens-container {
+    font-size: 1em;
+}
+
+.idioma {
+    font-size: 1.1em;
+}
+
+.projetos {
+    font-size: 1.3em;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #b88ca4;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+section h2 {
+    margin-top: 0;  
+}
+
+section {
+    margin-top: 10px; 
+}
