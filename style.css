@@ -1,13 +1,14 @@
 body {
-    font-family:'Times New Roman', Times, serif;
-    line-height:1.6;
-    margin:0;
-    padding:0;
-    background-color:rgb(250, 238, 247);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 238, 247);
+    font-size: 16px; 
 }
 
 .subtitulo {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 img {
@@ -16,7 +17,7 @@ img {
 }
 
 header {
-    background: linear-gradient(to right,#b38393, #e7bcc7);
+    background: linear-gradient(to right, #b38393, #e7bcc7);
     color: black;
     text-align: center;
     padding: 10px 0;
@@ -24,7 +25,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 section {
@@ -36,55 +37,50 @@ section {
 
 .sobremim {
     color: #333;
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 10px;
-    margin-left: 230px; 
+    margin-left: 15vw;
 }
 
 .sobre-mim-container {
-    display: flex;           
-    align-items: flex-start; 
-    justify-content: flex-end; 
-    gap: 200px; 
-    font-size:1.5em;              
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    font-size: 1.5rem;
 }
 
 .sobre-mim-container p {
-    max-width: 700px;       
-    margin-top: 50;        
-    margin-left: 50px;  
+    max-width: 700px;
     text-align: center;
+    margin: 0 auto; 
 }
 
 .foto-container {
-    position: relative;       
+    position: relative;
 }
 
 .foto-perfil {
-    width: 300px;             
-    border-radius: 50%;       
-    margin-top: 0;            
-    margin-right: 140px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 0;
 }
 
 .linguagens {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .linguagens-container {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .idioma {
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 .projetos {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
-
-
-
 
 ul {
     list-style-type: none;
@@ -92,7 +88,7 @@ ul {
 }
 
 ul li {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: #555;
 }
 
@@ -105,14 +101,14 @@ footer {
 }
 
 footer p {
-    font-size: 1em;
+    font-size: 1rem;
     margin: 5px 0;
 }
 
 footer a {
     color: #b88ca4;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 footer a:hover {
@@ -120,9 +116,9 @@ footer a:hover {
 }
 
 section h2 {
-    margin-top: 0;  
+    margin-top: 0;
 }
 
 section {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
