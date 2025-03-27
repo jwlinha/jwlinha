@@ -1,82 +1,114 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-        <title>Página de Portifólio</title>
-        <meta charset="UTF-8" />
-
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia Bratti | Desenvolvedora Front-end</title>
+    <meta name="description" content="Portfólio de Julia Bratti, estudante de Análise e Desenvolvimento de Sistemas">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
 
 <body>
-    <header> 
-        <h1>Portifólio Julia Bratti</h1>
-        <p class="subtitulo"> Estudando para me tornar Desenvolvedora Web Full Stack</p>
+    <header class="cabecalho"> 
+        <h1 class="cabecalho-titulo">Julia Bratti</h1>
+        <p class="cabecalho-subtitulo">Desenvolvedora em Formação</p>
+        <nav class="cabecalho-menu">
+            <a href="#sobre" class="menu-link">Sobre</a>
+            <a href="#projetos" class="menu-link">Projetos</a>
+            <a href="#contato" class="menu-link">Contato</a>
+        </nav>
     </header>
 
-    <section> 
-        <h2 class="sobremim">Sobre mim:</h2>
-        
-        <div class="sobre-mim-container">
-            <p>Sou estudante de ADS e possuo grande interesse por tecnologia e desenvolvimento de software. Sigo aprofundando minhas habilidades em Java, JavaScript, HTML e CSS através de cursos, prática e estudos. 
-                Estou animada para iniciar minha carreira na área de tecnologia e busco uma oportunidade para desenvolver meus conhecimentos além de colaborar positivamente num ambiente de trabalho.</p>
-            <div class="foto-container">
-                <img class="foto-perfil" width="300" src="imagens/fotoperfil.jpg" alt="Foto de perfil"/>
+    <main>
+        <section id="sobre" class="sobre"> 
+            <h2 class="secao-titulo">Sobre mim</h2>
+            
+            <div class="sobre-conteudo">
+                <div class="sobre-texto">
+                    <p>Olá! Sou Julia, estudante de Análise e Desenvolvimento de Sistemas apaixonada por desenvolvimento web.</p>
+                    <p>Atualmente focada em:</p>
+                    <ul class="sobre-lista">
+                        <li>Desenvolvimento Front-end (HTML, CSS, JavaScript)</li>
+                        <li>Java</li>
+                        <li>Versionamento com Git</li>
+                        <li>Responsividade e acessibilidade</li>
+                    </ul>
+                </div>
+                <div class="sobre-imagem">
+                    <img class="foto-perfil" width="300" src="imagens/fotoperfil.jpg" alt="Julia Bratti sorrindo" loading="lazy"/>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section> 
-        <h2 class="habilidades">Habilidades</h2>
+        <section class="habilidades">
+            <h2 class="secao-titulo">Habilidades</h2>
 
-        <div class="linguagens"> 
-            <h3>Linguagens</h3>
-            <ul class="linguagens-container">
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
+            <div class="habilidades-container"> 
+                <div class="habilidade-categoria">
+                    <h3 class="categoria-titulo">Tecnologias</h3>
+                    <ul class="habilidade-lista">
+                        <li class="habilidade-item">HTML5</li>
+                        <li class="habilidade-item">CSS3</li>
+                        <li class="habilidade-item">JavaScript</li>
+                        <li class="habilidade-item">Java</li>
+                        <li class="habilidade-item">Git</li>
+                    </ul>
+                </div>
 
-        </div>
-    </section>
-
-    <section> 
-        <h2>Projetos (atualizando!)</h2>
-
-        <div class="projetos">
-        <h3>Calculadora Web</h3>
-        <img width ="400" height="235" src="imagens/calculadora.png" alt="Print do projeto da calculadora"/>
-        <a target="_blank" href="https://github.com/jwlinha/calculator.">Clique aqui</a>
-        </div>
-
-        <div class="projetos">
-            <h3>Amavi Acessórios</h3>
-            <img width ="400" height="235" src="imagens/amavi.jpeg" alt="Print do projeto da calculadora"/>
-            <a target="_blank" href="https://jwlinha.github.io/amaviacessorios/">Clique aqui</a>
+                <div class="habilidade-categoria">
+                    <h3 class="categoria-titulo">Idiomas</h3>
+                    <ul class="habilidade-lista">
+                        <li class="habilidade-item">Português - Nativo</li>
+                        <li class="habilidade-item">Inglês - Intermediário (Boa leitura e escrita, mas ainda estou aprimorando a fala e a escuta.)</li>
+                    </ul>
+                </div>
             </div>
-     </section>
+        </section>
 
-     <section>
-        <h2>Idiomas</h2>
+        <section id="projetos" class="projetos">
+            <h2 class="secao-titulo">Projetos</h2>
 
-        <div>
-            <ul class="idioma">
-                <li>Português - Nativo/Fluente</li>
-                <li>Inglês - Intermediário. (Tenho boa compreensão de leitura e escrita, mas ainda estou 
-                aprimorando minhas habilidades de fala e escuta.)</li>
-            </ul>
-        </div>
-     </section>
+            <div class="projetos-grid">
+                <article class="projeto-card">
+                    <h3 class="projeto-titulo">Calculadora Web</h3>
+                    <img width="400" height="235" src="imagens/calculadora.png" alt="Calculadora funcional" loading="lazy" class="projeto-imagem"/>
+                    <p class="projeto-descricao">Calculadora interativa desenvolvida com HTML, CSS e JavaScript puro.</p>
+                    <div class="projeto-links">
+                        <a href="https://jwlinha.github.io/calculadora/" target="_blank" rel="noopener" class="projeto-link">Demo</a>
+                        <a href="https://github.com/jwlinha/calculadora" target="_blank" rel="noopener" class="projeto-link">Código</a>
+                    </div>
+                </article>
+
+                <article class="projeto-card">
+                    <h3 class="projeto-titulo">Amavi Acessórios</h3>
+                    <img width="400" height="235" src="imagens/amavi.jpeg" alt="Loja virtual de acessórios" loading="lazy" class="projeto-imagem"/>
+                    <p class="projeto-descricao">Landing page para loja de acessórios com elementos interativos.</p>
+                    <div class="projeto-links">
+                        <a href="https://jwlinha.github.io/amaviacessorios/" target="_blank" rel="noopener" class="projeto-link">Demo</a>
+                        <a href="https://github.com/jwlinha/amaviacessorios" target="_blank" rel="noopener" class="projeto-link">Código</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
      
-     <footer>
-        <h2>Informações de Contato</h2>
+    <footer id="contato" class="rodape">
+        <h2 class="rodape-titulo">Contato</h2>
 
-        <div>
-        <p>E-mail: antoniajulia151@gmail.com</p>
-        <p>Celular: (48) 99666-2288</p>
-        <p>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/julia-bratti-2156972b0">www.linkedin.com/in/julia-bratti-2156972b0</a></p>
+        <div class="rodape-conteudo">
+            <address class="rodape-contatos">
+                <a href="mailto:antoniajulia151@gmail.com" class="contato-link">antoniajulia151@gmail.com</a>
+                <a href="https://wa.me/+5548996662288" target="_blank" rel="noopener" class="contato-link">48 99666-2288</a>
+                <a href="https://www.linkedin.com/in/julia-bratti-2156972b0" target="_blank" rel="noopener" class="contato-link">LinkedIn</a>
+                <a href="https://github.com/jwlinha" target="_blank" rel="noopener" class="contato-link">GitHub</a>
+            </address>
+            <p class="rodape-copyright">&copy; Julia Bratti.</p>
         </div>
-     </footer>
+    </footer>
+
+    <script src="main.js" defer></script>
 </body>
 </html>
