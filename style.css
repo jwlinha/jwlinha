@@ -1,7 +1,7 @@
 :root {
     --primary: #dfb4cd;
-    --secondary: #e48db1;
-    --accent: #420b50;
+    --secondary: #ce8aa1;
+    --accent: #6a197e;
     --background: #f9f9f9;
     --text: #333;
     --text-light: #666;
@@ -195,6 +195,44 @@
     left: 0;
     color: var(--accent);
     font-size: 1.2rem;
+  }
+
+  .pessoal {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+  }
+  
+  .pessoal-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .pessoal-texto {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1.1rem;
+  }
+  
+  .pessoal-lista {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    list-style: none;
+  }
+  
+  .pessoal-lista li {
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  .pessoal-lista li::before {
+    content: '▹';
+    position: absolute;
+    left: -1.2rem;
+    color: var(--accent);
   }
   
   .projetos {

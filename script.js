@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-   
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -21,8 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const triggerPoint = window.innerHeight * 0.85;
         
         elements.forEach(el => {
-            if (el.getBoundingClientRect().top < triggerPoint) {
+            const elTop = el.getBoundingClientRect().top;
+            
+            if (elTop < triggerPoint) {
                 el.classList.add('reveal');
+                console.log('Elemento animado:', el); 
             }
         });
     }
@@ -39,4 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     animateOnScroll();
-}); 
+});
