@@ -299,41 +299,74 @@
   }
   
   .rodape {
+    position: relative; 
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: var(--white);
     padding: 2rem 1rem;
     text-align: center;
-  }
-  
-  .rodape-titulo {
+}
+
+.rodape-titulo {
     margin-bottom: 1.5rem;
-  }
-  
-  .rodape-contatos {
+}
+
+.rodape-contatos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-  
-  .contato-link {
+}
+
+.contato-link {
     color: var(--white);
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     transition: var(--transition);
-  }
-  
-  .contato-link:hover {
+}
+
+.contato-link:hover {
     opacity: 0.8;
-  }
-  
-  .rodape-copyright {
+}
+
+.rodape-copyright {
     opacity: 0.8;
     font-size: 0.9rem;
-  }
+}
+
+.social-icons-vertical {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons-vertical a {
+    color: var(--white); 
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons-vertical a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .social-icons-vertical {
+        top: 15px;
+        right: 15px;
+        gap: 8px;
+    }
+    
+    .social-icons-vertical a {
+        font-size: 1.3rem;
+    }
+}
   
   @media (max-width: 768px) {
     .cabecalho-menu {
